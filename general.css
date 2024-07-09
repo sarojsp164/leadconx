@@ -1,0 +1,311 @@
+body{
+    margin:0;
+    font-family: arial;
+}
+.bg-image{
+    width:100%;
+    top: 0;
+    position: relative;
+
+}
+.img{
+    position: relative;
+
+}
+
+.img-flexbox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    left: 10px;
+}
+
+.header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+    /*add position:absolute here*/
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 60px;
+    margin-right:25px ;
+    margin-left: 25px;
+}
+.left-section{
+    flex:1;
+}
+.logo{
+    width: 60px;
+}
+.logoname{
+    width: 160px;
+    margin-left: 5px;
+}
+.right-section {
+    display: flex;
+    right: 10px;
+    flex:1;
+    justify-content: end;
+    margin-right: 15px;
+    align-items: center;
+}
+.why, .features, .pricing, .contact{
+    margin-left: 20px;
+    
+}
+.why{
+    white-space: nowrap;
+}
+.bwhy{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-text{
+    flex:2;
+    font-size: 70px;
+    flex-shrink: 0;
+    color: white;
+    font-weight: bold;
+}
+.mobile-pic{
+    flex:1;
+   flex-shrink: 0;
+   margin-right: 20px;
+}
+.mobile{
+    width: 100%;    
+}
+.dl{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    width: 200px;
+    margin-left: 25px;
+    white-space: nowrap;
+}
+.whyleadconx{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+    font-family:'Open Sans', sans-serif;
+    color:white;
+}
+@media(max-width:785px){
+    .whyleadconx{
+        font-size: 30px;
+        height: 100px;
+        color: black;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .dl{
+        font-size: 15px;
+        width: 120px;
+    }
+    .leadcon-content{
+        flex-direction: column;
+    }
+}
+@media(min-width:786px) and (max-width:980px){
+    .whyleadconx{
+        font-size:60px;
+        height: 80px;
+    }
+    .main-text{
+        font-size: 45px;
+    }
+    .leadcon-content{
+        flex-direction: column;
+    }
+}
+.leadcon-content{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+.leadbox{
+    flex: 1;
+    margin-left: 30px;
+    margin: 25PX;
+
+}
+.leadpic{
+    width: 100%; 
+}
+.leadtext{
+    flex: 2;
+    line-height: 19px;
+    font-size: 30px;
+    margin-left: 40px;
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+}
+#start-text{
+    color: rgb(63, 116, 204);
+    font-family: 'Varela Round', sans-serif;
+    font-weight:600;
+}
+.feature{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.col1, .col2,.col3{
+    display: flex;
+    flex: 1;
+    margin-top: 40px;
+}
+.ftimg1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.box1, .box1-cloud, .box2, .box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.box1-cloud:hover .tooltip{
+    opacity: 1;
+    margin: 30px;
+}
+.contacts, .tasks, .cloud, .groups, .android, .comp, .fdata-label, .fdata {
+    margin-top: 10px;
+}
+
+.contacts{
+    align-self: flex-end;
+    position: relative;
+}
+.box1 .tooltip, .box2 .tooltip{
+    position: absolute;
+    background-color: rgb(197, 221, 236);
+    width: 200px;
+    margin: 30px;
+    margin-top: 50px;
+    margin-left: 120px;
+    border-radius: 12px;
+    padding: 10px;
+    opacity: 0;
+    color: rgb(17, 16, 16);
+    pointer-events: none;
+    transition : opacity 0.3;
+    font-size : 14px;
+    font-family : 'Open Sans', sans-serif;
+}
+.box1:hover .tooltip, .box2:hover .tooltip{
+    opacity: 1;
+}
+.tooltip{
+    position: absolute;
+    background-color: rgb(197, 221, 236);
+    width: 200px;
+    border-radius: 10px;
+    padding: 12px;
+    opacity: 0;
+    color: rgb(17, 16, 16);
+    pointer-events: none;
+    transition : opacity 0.3;
+    font-size : 14px;
+    font-family : 'Open Sans', sans-serif;
+    z-index: 1;
+}
+.ftimg1 img{
+    width: 100px;
+}
+
+.cloud{
+    align-self: flex-start;
+}
+.tasks{
+    align-self: center;
+}
+.groups{
+    align-self: center;
+}
+.android{
+    align-self: center;
+}
+.ftbutton{
+    display: flex;
+    justify-content: center;
+}
+.ftbutton button{
+    align-self: center;
+    padding: 18px;
+    background-color: rgb(107, 94, 94);
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    margin-top: 25px;
+}
+.box3{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+.box2{
+    flex: 1;
+}
+.fdata{
+    align-self: flex-end;
+}
+.box{
+    align-self: flex-end;
+}
+.fdata-label{
+    align-self: flex-start;
+    margin-left: 13px;
+}
+
+.pricing-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    margin: 60px;
+    margin-top: 50px;
+}
+.pricing-page img{
+    width: 90%;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+}
+.dev{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    color: grey;
+}
+.tc{
+    font-size: 20px;
+    color: wheat;
+}
